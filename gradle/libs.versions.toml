@@ -1,0 +1,39 @@
+[versions]
+
+androidxAnnotation = "1.8.1"
+androidxCoreKtx = "1.13.1"
+junitJunit = "4.13.2"
+junit = "5.9.2"
+kotlin = "2.0.0"
+androidGradlePlugin = "8.5.1"
+loggingInterceptor = "4.11.0"
+okhttp3 = "4.12.0"
+jsonSimple = "1.1.1"
+okio = "3.9.0"
+androidxTestCore = "1.6.1"
+mockitoCore = "5.13.0"
+robolectric = "4.8.2"
+
+
+[libraries]
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+junit-junit = { group = "junit", name = "junit",version.ref = "junitJunit" }
+junit-vintage-engine = { group = "org.junit.vintage", name = "junit-vintage-engine",version.ref = "junit" }
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api",version.ref = "junit" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine",version.ref = "junit" }
+jsonSimple = { group = "com.googlecode.json-simple", name = "json-simple", version.ref = "jsonSimple" }
+com-squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okHttpInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" , version.ref = "loggingInterceptor"}
+okio-okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio" }
+androidx-test-core = { group = "androidx.test", name = "core",version.ref = "androidxTestCore" }
+mockito-core = { group = "org.mockito", name = "mockito-core",version.ref = "mockitoCore" }
+robolectric = { group = "org.robolectric", name = "robolectric",version.ref = "robolectric" }
+
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
